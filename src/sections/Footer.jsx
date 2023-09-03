@@ -14,7 +14,7 @@ const Footer = () => {
                 Your perfect Size In Store. Get Rewards
               </p>
               <div className='flex items-start gap-5 mt-8'>
-                {socialMedia.map(icon => (<div className='flex justify-center items-center w-12 h-12 bg-white rounded-full'>
+                {socialMedia.map(icon => (<div key={icon.src} className='flex justify-center items-center w-12 h-12 bg-white rounded-full'>
                   <img src={icon.src} alt={icon.alt} width={24} height={24} />
                 </div>))}
               </div>
